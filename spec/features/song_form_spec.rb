@@ -29,6 +29,7 @@ describe "the song form", :type => :feature do
 
   it 'creates a song with notes' do
     visit '/songs/new'
+    puts page.html
     fill_in :song_title, with: 'Little Earthquakes'
     fill_in :song_notes_1, with: 'great piano'
     fill_in :song_notes_2, with: 'inaccurate seismology'
